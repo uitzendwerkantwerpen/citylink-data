@@ -3,123 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CityLink Data | Premium Global eSIM</title>
+    <title>CityLink Data | Elite Global eSIM Portal</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Professionele Lettertypes -->
+    <!-- Premium Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Professionele Iconen (FontAwesome) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Premium Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Floating High-Tech Navbar -->
+    <!-- Deep Space Background Animation -->
+    <div class="bg-animation"></div>
+
+    <!-- Pro SaaS Navbar -->
     <header>
         <div class="nav-container">
-            <img src="esim.jpg" alt="CityLink Data Logo" class="logo-img">
-            <h2 class="logo-text">CityLink Data</h2>
+            <div class="brand">
+                <img src="esim.jpg" alt="CityLink Data Logo" class="logo-img">
+                <h2 class="logo-text">CITYLINK<span class="text-light">DATA</span></h2>
+            </div>
+            <div class="nav-links">
+                <a href="#destinations">Destinations</a>
+                <a href="#network">Global Network</a>
+                <a href="#about">Technology</a>
+                <button class="nav-btn">ACCESS PORTAL <i class="fa-solid fa-bolt"></i></button>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section (Parallax) -->
+    <!-- Ultimate Hero Section met Zoekbalk -->
     <section class="hero">
-        <div class="hero-content">
-            <h1>Stay Connected, <span>Anywhere.</span></h1>
-            <p>Deploy instant, military-grade 5G data to your device in seconds. No physical SIMs, no hidden roaming fees. Just pure speed.</p>
-            <button class="primary-btn" onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'});">ACTIVATE YOUR ESIM</button>
-        </div>
-    </section>
-
-    <!-- Global Coverage Section -->
-    <section class="steps-section glass-section">
-        <h2>Global Coverage: 190+ Countries</h2>
-        <p class="sub-text">From the skyscrapers of New York to the beaches of Bali and the streets of Istanbul. CityLink Data connects you seamlessly to the most powerful local telecom towers worldwide.</p>
-        <div class="grid-container">
-            <div class="card">
-                <i class="fa-solid fa-map-location-dot icon"></i>
-                <h3>Europe</h3>
-                <p>Full coverage in 39+ European countries including UK, France, Germany, and Switzerland.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-globe icon"></i>
-                <h3>Americas</h3>
-                <p>High-speed networks across the USA, Canada, Mexico, and South America.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-satellite-dish icon"></i>
-                <h3>Asia & Middle East</h3>
-                <p>Flawless connection in Turkey, UAE, Japan, Thailand, and 50+ other nations.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="pros-cons-section glass-section">
-        <h2>Why Top Travelers Choose CityLink</h2>
-        <div class="grid-container">
-            <div class="pros">
-                <ul class="feature-list">
-                    <li><i class="fa-solid fa-bolt feature-icon"></i> <strong>Instant Delivery:</strong> Scan the QR code from your email and get online in 60 seconds.</li>
-                    <li><i class="fa-solid fa-plane-slash feature-icon"></i> <strong>Zero Roaming Fees:</strong> Bypass your provider's expensive daily charges forever.</li>
-                    <li><i class="fa-brands fa-whatsapp feature-icon"></i> <strong>Keep Your WhatsApp:</strong> Your original number stays active for calls and texts.</li>
-                    <li><i class="fa-solid fa-signal feature-icon"></i> <strong>Priority 5G Networks:</strong> We automatically connect you to the fastest local carrier.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Packages met ECHTE VLAGGEN -->
-    <section id="packages" class="packages-section glass-section">
-        <h2>Elite Data Packages</h2>
-        <div class="grid-container">
+        <div class="hero-content fade-in">
+            <div class="hero-badge">⚡ MILITARY-GRADE 5G NETWORK</div>
+            <h1>Uninterrupted Global<br><span class="text-glow">Connection.</span></h1>
+            <p>Bypass roaming fees forever. Deploy instant eSIM data to your device across 190+ countries in under 60 seconds.</p>
             
-            <!-- Turkey Package -->
-            <div class="price-card">
+            <!-- De concurrentie-killer: De High-Tech Zoekbalk -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" class="search-input" placeholder="Type your destination (e.g., Turkey, USA)...">
+                <button class="search-btn" onclick="document.getElementById('destinations').scrollIntoView({behavior: 'smooth'});">EXPLORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="network" class="features-section glass-section fade-in delay-1">
+        <div class="grid-container">
+            <div class="feature-box">
+                <i class="fa-solid fa-qrcode icon"></i>
+                <h3>Instant Delivery</h3>
+                <p>QR code straight to your inbox. Scan, activate, and dominate the digital space.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-brands fa-whatsapp icon"></i>
+                <h3>Keep Your Number</h3>
+                <p>Your primary SIM stays active for WhatsApp and iMessage. Zero interruptions.</p>
+            </div>
+            <div class="feature-box">
+                <i class="fa-solid fa-shield-halved icon"></i>
+                <h3>Secure Network</h3>
+                <p>Encrypted 5G connections via the world's most powerful telecom towers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Elite Packages -->
+    <section id="destinations" class="packages-section glass-section fade-in delay-2">
+        <h2 class="section-title">Top Destinations</h2>
+        <p class="section-sub">Select your target region and initialize your data package.</p>
+        
+        <div class="grid-container">
+            <!-- Turkey -->
+            <div class="cyber-card">
                 <img src="https://flagcdn.com/w80/tr.png" class="real-flag" alt="Turkey">
                 <h3>Turkey</h3>
                 <div class="data-badge">25GB DATA</div>
-                <p class="details">30 Days Validity • 5G Speed</p>
+                <ul class="card-specs">
+                    <li><i class="fa-solid fa-check text-glow"></i> 30 Days Validity</li>
+                    <li><i class="fa-solid fa-check text-glow"></i> Premium 5G/4G</li>
+                    <li><i class="fa-solid fa-check text-glow"></i> Turkcell / Vodafone</li>
+                </ul>
                 <h4 class="price">€ 25.00</h4>
-                <button class="buy-btn">BUY NOW</button>
+                <button class="action-btn">INITIALIZE</button>
             </div>
 
-            <!-- USA Package -->
-            <div class="price-card">
+            <!-- Global Pass (Premium) -->
+            <div class="cyber-card premium-card">
+                <div class="card-glow"></div>
+                <i class="fa-solid fa-globe real-flag" style="font-size: 50px; color: #00f0ff; margin-bottom: 20px;"></i>
+                <h3>Global Pass</h3>
+                <div class="data-badge text-glow">5GB DATA</div>
+                <ul class="card-specs">
+                    <li><i class="fa-solid fa-check text-glow"></i> 190+ Countries</li>
+                    <li><i class="fa-solid fa-check text-glow"></i> 30 Days Validity</li>
+                    <li><i class="fa-solid fa-check text-glow"></i> Auto-Network Switch</li>
+                </ul>
+                <h4 class="price">€ 35.00</h4>
+                <button class="action-btn premium-btn">INITIALIZE</button>
+            </div>
+
+            <!-- USA -->
+            <div class="cyber-card">
                 <img src="https://flagcdn.com/w80/us.png" class="real-flag" alt="USA">
                 <h3>United States</h3>
                 <div class="data-badge">10GB DATA</div>
-                <p class="details">30 Days Validity • 5G Speed</p>
+                <ul class="card-specs">
+                    <li><i class="fa-solid fa-check text-glow"></i> 30 Days Validity</li>
+                    <li><i class="fa-solid fa-check text-glow"></i> AT&T / T-Mobile</li>
+                    <li><i class="fa-solid fa-check text-glow"></i> 5G Ultra Wideband</li>
+                </ul>
                 <h4 class="price">€ 18.00</h4>
-                <button class="buy-btn">BUY NOW</button>
+                <button class="action-btn">INITIALIZE</button>
             </div>
-
-            <!-- Global Package -->
-            <div class="price-card premium-card">
-                <i class="fa-solid fa-earth-americas real-flag" style="color: #007bff;"></i>
-                <h3>Global Pass</h3>
-                <div class="data-badge">5GB DATA</div>
-                <p class="details">Works in 190 Countries • 30 Days</p>
-                <h4 class="price">€ 35.00</h4>
-                <button class="buy-btn premium-btn">BUY NOW</button>
-            </div>
-
-            <!-- Europe Package -->
-            <div class="price-card">
-                <img src="https://flagcdn.com/w80/eu.png" class="real-flag" alt="Europe">
-                <h3>Europe+</h3>
-                <div class="data-badge">50GB DATA</div>
-                <p class="details">39 Countries • 30 Days</p>
-                <h4 class="price">€ 40.00</h4>
-                <button class="buy-btn">BUY NOW</button>
-            </div>
-
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 CityLink Data. All rights reserved.</p>
-        <p class="agency-credit">Engineered by <strong>MS Global Creative Studios</strong> | MSarac</p>
+        <div class="footer-content">
+            <h2 class="logo-text" style="font-size: 1.2rem; margin-bottom: 10px;">CITYLINK<span class="text-light">DATA</span></h2>
+            <p>Secure Global Connectivity &copy; 2026</p>
+            <div class="agency-credit">Systems Engineered & Designed by<br><strong>MS Global Creative Studios</strong> | MSarac</div>
+        </div>
     </footer>
 </body>
 </html>
