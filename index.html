@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CityLink Data | Premium Global eSIM</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Professionele Lettertypes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Professionele Iconen (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Floating High-Tech Navbar -->
     <header>
         <div class="nav-container">
             <img src="esim.jpg" alt="CityLink Data Logo" class="logo-img">
@@ -15,94 +21,105 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section (Parallax) -->
     <section class="hero">
         <div class="hero-content">
             <h1>Stay Connected, <span>Anywhere.</span></h1>
-            <p>Instant high-speed 5G data across 190+ countries. No physical SIMs, no roaming fees, no stress.</p>
-            <button class="primary-btn" onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'});">Get Your eSIM Now</button>
+            <p>Deploy instant, military-grade 5G data to your device in seconds. No physical SIMs, no hidden roaming fees. Just pure speed.</p>
+            <button class="primary-btn" onclick="document.getElementById('packages').scrollIntoView({behavior: 'smooth'});">ACTIVATE YOUR ESIM</button>
         </div>
     </section>
 
-    <!-- How it Works -->
-    <section class="steps-section">
-        <h2>Online in 3 Simple Steps</h2>
+    <!-- Global Coverage Section -->
+    <section class="steps-section glass-section">
+        <h2>Global Coverage: 190+ Countries</h2>
+        <p class="sub-text">From the skyscrapers of New York to the beaches of Bali and the streets of Istanbul. CityLink Data connects you seamlessly to the most powerful local telecom towers worldwide.</p>
         <div class="grid-container">
             <div class="card">
-                <div class="icon">🌍</div>
-                <h3>1. Choose Destination</h3>
-                <p>Select your country and the data package you need for your trip.</p>
+                <i class="fa-solid fa-map-location-dot icon"></i>
+                <h3>Europe</h3>
+                <p>Full coverage in 39+ European countries including UK, France, Germany, and Switzerland.</p>
             </div>
             <div class="card">
-                <div class="icon">💳</div>
-                <h3>2. Secure Payment</h3>
-                <p>Check out safely using Apple Pay, Credit Card, or Bancontact via Stripe.</p>
+                <i class="fa-solid fa-globe icon"></i>
+                <h3>Americas</h3>
+                <p>High-speed networks across the USA, Canada, Mexico, and South America.</p>
             </div>
             <div class="card">
-                <div class="icon">🚀</div>
-                <h3>3. Scan & Connect</h3>
-                <p>Receive your QR code instantly via email and get online at full speed.</p>
+                <i class="fa-solid fa-satellite-dish icon"></i>
+                <h3>Asia & Middle East</h3>
+                <p>Flawless connection in Turkey, UAE, Japan, Thailand, and 50+ other nations.</p>
             </div>
         </div>
     </section>
 
-    <!-- Packages -->
-    <section id="packages" class="packages-section">
-        <h2>Top Traveler Picks</h2>
-        <div class="grid-container">
-            <!-- Turkey -->
-            <div class="price-card">
-                <h3>🇹🇷 Turkey</h3>
-                <div class="data-badge">25GB DATA</div>
-                <p class="details">30 Days Validity • 5G Speed</p>
-                <h4 class="price">€ 25.00</h4>
-                <button class="buy-btn">BUY NOW</button>
-            </div>
-            <!-- USA -->
-            <div class="price-card">
-                <h3>🇺🇸 United States</h3>
-                <div class="data-badge">25GB DATA</div>
-                <p class="details">30 Days Validity • 5G Speed</p>
-                <h4 class="price">€ 25.00</h4>
-                <button class="buy-btn">BUY NOW</button>
-            </div>
-            <!-- UAE -->
-            <div class="price-card">
-                <h3>🇦🇪 Dubai (UAE)</h3>
-                <div class="data-badge">25GB DATA</div>
-                <p class="details">30 Days Validity • 5G Speed</p>
-                <h4 class="price">€ 25.00</h4>
-                <button class="buy-btn">BUY NOW</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pros & Cons -->
-    <section class="pros-cons-section">
+    <!-- Why Choose Us -->
+    <section class="pros-cons-section glass-section">
+        <h2>Why Top Travelers Choose CityLink</h2>
         <div class="grid-container">
             <div class="pros">
-                <h2>Why Choose CityLink?</h2>
-                <ul>
-                    <li>✔️ <strong>Instant Delivery:</strong> QR code delivered to your inbox in seconds.</li>
-                    <li>✔️ <strong>Zero Roaming Fees:</strong> Never pay hidden charges to your home provider.</li>
-                    <li>✔️ <strong>Keep Your Number:</strong> Use WhatsApp with your own number while using our data.</li>
-                    <li>✔️ <strong>Premium 5G Networks:</strong> We partner with top local telecom giants.</li>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-bolt feature-icon"></i> <strong>Instant Delivery:</strong> Scan the QR code from your email and get online in 60 seconds.</li>
+                    <li><i class="fa-solid fa-plane-slash feature-icon"></i> <strong>Zero Roaming Fees:</strong> Bypass your provider's expensive daily charges forever.</li>
+                    <li><i class="fa-brands fa-whatsapp feature-icon"></i> <strong>Keep Your WhatsApp:</strong> Your original number stays active for calls and texts.</li>
+                    <li><i class="fa-solid fa-signal feature-icon"></i> <strong>Priority 5G Networks:</strong> We automatically connect you to the fastest local carrier.</li>
                 </ul>
             </div>
-            <div class="cons">
-                <h2>Good to Know</h2>
-                <ul>
-                    <li>⚠️ <strong>eSIM Compatible Devices Only:</strong> Your phone must support eSIM technology (iPhone 11+, modern Androids).</li>
-                    <li>⚠️ <strong>Data Only:</strong> These packages do not include a local phone number for classic SMS/Calls.</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- Packages met ECHTE VLAGGEN -->
+    <section id="packages" class="packages-section glass-section">
+        <h2>Elite Data Packages</h2>
+        <div class="grid-container">
+            
+            <!-- Turkey Package -->
+            <div class="price-card">
+                <img src="https://flagcdn.com/w80/tr.png" class="real-flag" alt="Turkey">
+                <h3>Turkey</h3>
+                <div class="data-badge">25GB DATA</div>
+                <p class="details">30 Days Validity • 5G Speed</p>
+                <h4 class="price">€ 25.00</h4>
+                <button class="buy-btn">BUY NOW</button>
             </div>
+
+            <!-- USA Package -->
+            <div class="price-card">
+                <img src="https://flagcdn.com/w80/us.png" class="real-flag" alt="USA">
+                <h3>United States</h3>
+                <div class="data-badge">10GB DATA</div>
+                <p class="details">30 Days Validity • 5G Speed</p>
+                <h4 class="price">€ 18.00</h4>
+                <button class="buy-btn">BUY NOW</button>
+            </div>
+
+            <!-- Global Package -->
+            <div class="price-card premium-card">
+                <i class="fa-solid fa-earth-americas real-flag" style="color: #007bff;"></i>
+                <h3>Global Pass</h3>
+                <div class="data-badge">5GB DATA</div>
+                <p class="details">Works in 190 Countries • 30 Days</p>
+                <h4 class="price">€ 35.00</h4>
+                <button class="buy-btn premium-btn">BUY NOW</button>
+            </div>
+
+            <!-- Europe Package -->
+            <div class="price-card">
+                <img src="https://flagcdn.com/w80/eu.png" class="real-flag" alt="Europe">
+                <h3>Europe+</h3>
+                <div class="data-badge">50GB DATA</div>
+                <p class="details">39 Countries • 30 Days</p>
+                <h4 class="price">€ 40.00</h4>
+                <button class="buy-btn">BUY NOW</button>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2026 CityLink Data. All rights reserved.</p>
-        <p class="agency-credit">Design & Engineering by <strong>MS Global Creative Studios</strong> | MSarac</p>
+        <p class="agency-credit">Engineered by <strong>MS Global Creative Studios</strong> | MSarac</p>
     </footer>
 </body>
 </html>
