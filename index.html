@@ -3,130 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CityLink Data | Elite Global eSIM Portal</title>
+    <title>CityLink Data | Secure Global Network</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Premium Fonts -->
+    <!-- Geforceerde Premium Lettertypes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Premium Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Professionele Iconen (Geen Emoji's) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Deep Space Background Animation -->
-    <div class="bg-animation"></div>
-
-    <!-- Pro SaaS Navbar -->
+    
+    <!-- Pro SaaS Navbar (Brede Indeling) -->
     <header>
         <div class="nav-container">
             <div class="brand">
+                <!-- Verwijs naar jouw logo -->
                 <img src="esim.jpg" alt="CityLink Data Logo" class="logo-img">
                 <h2 class="logo-text">CITYLINK<span class="text-light">DATA</span></h2>
             </div>
             <div class="nav-links">
+                <a href="#network">Network</a>
                 <a href="#destinations">Destinations</a>
-                <a href="#network">Global Network</a>
-                <a href="#about">Technology</a>
-                <button class="nav-btn">ACCESS PORTAL <i class="fa-solid fa-bolt"></i></button>
+                <a href="#technology">Technology</a>
+                <button class="nav-btn">ACCESS PORTAL <i class="fa-solid fa-arrow-right"></i></button>
             </div>
         </div>
     </header>
 
-    <!-- Ultimate Hero Section met Zoekbalk -->
+    <!-- Open Hero Section (Geen krap blokje meer) -->
     <section class="hero">
-        <div class="hero-content fade-in">
-            <div class="hero-badge">⚡ MILITARY-GRADE 5G NETWORK</div>
-            <h1>Uninterrupted Global<br><span class="text-glow">Connection.</span></h1>
-            <p>Bypass roaming fees forever. Deploy instant eSIM data to your device across 190+ countries in under 60 seconds.</p>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-bolt"></i> MILITARY-GRADE 5G NETWORK
+            </div>
             
-            <!-- De concurrentie-killer: De High-Tech Zoekbalk -->
-            <div class="search-container">
+            <h1 class="main-title">Uninterrupted Global<br><span class="text-glow">Connection.</span></h1>
+            <p class="sub-title">Bypass roaming fees forever. Deploy instant eSIM data to your device across 190+ countries in under 60 seconds.</p>
+            
+            <!-- High-Tech Zoekbalk -->
+            <div class="search-wrapper">
                 <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" class="search-input" placeholder="Type your destination (e.g., Turkey, USA)...">
-                <button class="search-btn" onclick="document.getElementById('destinations').scrollIntoView({behavior: 'smooth'});">EXPLORE</button>
+                <input type="text" class="search-input" placeholder="Enter your destination (e.g., Turkey, USA)...">
+                <button class="search-btn">EXPLORE</button>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="network" class="features-section glass-section fade-in delay-1">
+    <!-- Gestructureerde Features (In strakke glazen kaarten) -->
+    <section id="network" class="features-section">
         <div class="grid-container">
-            <div class="feature-box">
+            <div class="feature-card">
                 <i class="fa-solid fa-qrcode icon"></i>
                 <h3>Instant Delivery</h3>
-                <p>QR code straight to your inbox. Scan, activate, and dominate the digital space.</p>
+                <p>QR code delivered straight to your inbox. Scan, activate, and dominate the digital space instantly.</p>
             </div>
-            <div class="feature-box">
+            <div class="feature-card">
                 <i class="fa-brands fa-whatsapp icon"></i>
                 <h3>Keep Your Number</h3>
-                <p>Your primary SIM stays active for WhatsApp and iMessage. Zero interruptions.</p>
+                <p>Your primary physical SIM stays active for WhatsApp and iMessage. Zero interruptions to your workflow.</p>
             </div>
-            <div class="feature-box">
+            <div class="feature-card">
                 <i class="fa-solid fa-shield-halved icon"></i>
                 <h3>Secure Network</h3>
-                <p>Encrypted 5G connections via the world's most powerful telecom towers.</p>
+                <p>Encrypted 5G and 4G LTE connections routed through the world's most powerful telecom towers.</p>
             </div>
         </div>
     </section>
 
-    <!-- Elite Packages -->
-    <section id="destinations" class="packages-section glass-section fade-in delay-2">
-        <h2 class="section-title">Top Destinations</h2>
-        <p class="section-sub">Select your target region and initialize your data package.</p>
-        
-        <div class="grid-container">
-            <!-- Turkey -->
-            <div class="cyber-card">
-                <img src="https://flagcdn.com/w80/tr.png" class="real-flag" alt="Turkey">
-                <h3>Turkey</h3>
-                <div class="data-badge">25GB DATA</div>
-                <ul class="card-specs">
-                    <li><i class="fa-solid fa-check text-glow"></i> 30 Days Validity</li>
-                    <li><i class="fa-solid fa-check text-glow"></i> Premium 5G/4G</li>
-                    <li><i class="fa-solid fa-check text-glow"></i> Turkcell / Vodafone</li>
-                </ul>
-                <h4 class="price">€ 25.00</h4>
-                <button class="action-btn">INITIALIZE</button>
-            </div>
-
-            <!-- Global Pass (Premium) -->
-            <div class="cyber-card premium-card">
-                <div class="card-glow"></div>
-                <i class="fa-solid fa-globe real-flag" style="font-size: 50px; color: #00f0ff; margin-bottom: 20px;"></i>
-                <h3>Global Pass</h3>
-                <div class="data-badge text-glow">5GB DATA</div>
-                <ul class="card-specs">
-                    <li><i class="fa-solid fa-check text-glow"></i> 190+ Countries</li>
-                    <li><i class="fa-solid fa-check text-glow"></i> 30 Days Validity</li>
-                    <li><i class="fa-solid fa-check text-glow"></i> Auto-Network Switch</li>
-                </ul>
-                <h4 class="price">€ 35.00</h4>
-                <button class="action-btn premium-btn">INITIALIZE</button>
-            </div>
-
-            <!-- USA -->
-            <div class="cyber-card">
-                <img src="https://flagcdn.com/w80/us.png" class="real-flag" alt="USA">
-                <h3>United States</h3>
-                <div class="data-badge">10GB DATA</div>
-                <ul class="card-specs">
-                    <li><i class="fa-solid fa-check text-glow"></i> 30 Days Validity</li>
-                    <li><i class="fa-solid fa-check text-glow"></i> AT&T / T-Mobile</li>
-                    <li><i class="fa-solid fa-check text-glow"></i> 5G Ultra Wideband</li>
-                </ul>
-                <h4 class="price">€ 18.00</h4>
-                <button class="action-btn">INITIALIZE</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h2 class="logo-text" style="font-size: 1.2rem; margin-bottom: 10px;">CITYLINK<span class="text-light">DATA</span></h2>
-            <p>Secure Global Connectivity &copy; 2026</p>
-            <div class="agency-credit">Systems Engineered & Designed by<br><strong>MS Global Creative Studios</strong> | MSarac</div>
-        </div>
-    </footer>
 </body>
 </html>
