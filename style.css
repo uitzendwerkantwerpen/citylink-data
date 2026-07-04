@@ -1,53 +1,66 @@
-/* Base Styles */
+/* Base Styles & Parallax Background */
 body {
     background-color: #050505;
+    /* Dit zorgt voor het zwevende achtergrond effect tijdens het scrollen */
+    background-image: 
+        linear-gradient(rgba(5,5,5,0.85), rgba(5,5,5,0.95)),
+        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
     color: #ffffff;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     scroll-behavior: smooth;
 }
 
-/* Navbar */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Navbar - Zwevend & Gecentreerd */
 header {
-    background: rgba(5, 5, 5, 0.95);
+    background: rgba(5, 5, 5, 0.6);
+    backdrop-filter: blur(20px);
     padding: 20px 0;
-    border-bottom: 1px solid #222;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .nav-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo-img {
-    height: 50px; /* Aangepast formaat voor je esim.jpg */
+    height: 70px;
     width: auto;
-    border-radius: 8px; /* Maakt de randjes van je vierkante logo iets zachter */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 123, 255, 0.3);
 }
 
 .logo-text {
     margin: 0;
     font-size: 1.8rem;
-    letter-spacing: 1px;
-    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 900;
+    background: linear-gradient(90deg, #ffffff, #007bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Hero Section */
 .hero {
-    height: 70vh;
-    background-color: #0a0a0a;
-    background-image: 
-        radial-gradient(circle at center, rgba(0, 123, 255, 0.1) 0%, rgba(5, 5, 5, 1) 70%),
-        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
-    background-size: cover;
-    background-position: center;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,63 +69,48 @@ header {
 }
 
 .hero-content {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 40px;
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-    border: 1px solid #222;
+    background: rgba(10, 10, 10, 0.6);
+    padding: 60px 40px;
+    border-radius: 16px;
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+    max-width: 800px;
+    margin-top: 80px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    line-height: 1.1;
 }
 
-.hero h1 span {
-    color: #007bff; /* Neon Blue Accent */
-}
+.hero h1 span { color: #007bff; }
 
 .hero p {
     font-size: 1.2rem;
-    color: #ddd;
+    color: #ccc;
     max-width: 600px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 40px auto;
 }
 
-.primary-btn {
-    background: #007bff;
-    color: #fff;
-    border: none;
-    padding: 15px 40px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
-}
-
-.primary-btn:hover { 
-    background: #0056b3; 
-    transform: translateY(-2px);
-}
-
-/* Grid Layouts */
-.steps-section, .packages-section, .pros-cons-section {
-    padding: 80px 20px;
+/* Global Sections (Glassmorphism Over Parallax) */
+.glass-section {
+    padding: 100px 20px;
     text-align: center;
+    background: rgba(5, 5, 5, 0.7);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.steps-section { background-color: #080808; }
-.packages-section { background-color: #050505; }
-.pros-cons-section { background-color: #080808; }
-
-h2 { 
-    font-size: 2.2rem; 
-    margin-bottom: 50px; 
-    letter-spacing: 1px;
+.sub-text {
+    color: #bbb;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
 }
+
+h2 { font-size: 2.5rem; margin-bottom: 50px; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
 .grid-container {
     display: flex;
@@ -124,33 +122,98 @@ h2 {
 }
 
 /* Cards */
-.card, .price-card {
-    background: #111;
-    border: 1px solid #222;
-    border-radius: 12px;
+.card, .price-card, .pros {
+    background: rgba(15, 15, 15, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
     padding: 40px 20px;
-    width: 300px;
-    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+    width: 280px;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(15px);
 }
 
 .card:hover, .price-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     border-color: #007bff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 123, 255, 0.2);
 }
 
-.icon { font-size: 3rem; margin-bottom: 20px; }
+/* Echte Vlaggen & Iconen */
+.icon {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.real-flag {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    flex: 1 1 40%;
+    background: rgba(20, 20, 20, 0.9);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+.feature-icon {
+    color: #007bff;
+    margin-right: 15px;
+    font-size: 1.3rem;
+}
 
 /* Package specifics */
+.premium-card {
+    border-color: rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 25px rgba(0, 123, 255, 0.15);
+}
+
 .data-badge {
     color: #007bff;
     font-size: 1.8rem;
-    font-weight: bold;
+    font-weight: 900;
     margin: 15px 0;
-    text-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
 }
 
-.price { font-size: 2rem; margin: 20px 0; }
+.details { color: #888; font-size: 0.95rem; margin-bottom: 20px; }
+.price { font-size: 2.2rem; margin: 20px 0; font-weight: 700; }
+
+/* Buttons */
+.primary-btn {
+    background: linear-gradient(45deg, #0056b3, #007bff);
+    color: #fff;
+    border: none;
+    padding: 18px 45px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.4);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 123, 255, 0.6);
+}
 
 .buy-btn {
     width: 100%;
@@ -158,47 +221,24 @@ h2 {
     background: transparent;
     border: 2px solid #007bff;
     color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
+    font-weight: 900;
+    border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    text-transform: uppercase;
 }
 
-.buy-btn:hover { 
-    background: #007bff; 
-    color: #fff;
-}
-
-/* Pros & Cons */
-.pros, .cons {
-    background: #111;
-    padding: 40px;
-    border-radius: 12px;
-    text-align: left;
-    width: 45%;
-    min-width: 300px;
-    border: 1px solid #222;
-}
-
-.pros ul, .cons ul {
-    list-style: none;
-    padding: 0;
-}
-
-.pros li, .cons li {
-    margin-bottom: 15px;
-    color: #ccc;
-    font-size: 1.05rem;
-}
+.buy-btn:hover { background: #007bff; color: #fff; }
+.premium-btn { background: #007bff; color: white; }
 
 /* Footer */
 footer {
-    background: #000;
-    padding: 40px 20px;
+    background: #020202;
+    padding: 50px 20px;
     text-align: center;
-    border-top: 1px solid #222;
-    color: #666;
+    border-top: 1px solid #111;
+    color: #555;
 }
 
-.agency-credit { color: #888; font-size: 0.95rem; margin-top: 10px; }
-.agency-credit strong { color: #fff; }
+.agency-credit { color: #777; font-size: 0.95rem; margin-top: 15px; }
+.agency-credit strong { color: #aaa; }
